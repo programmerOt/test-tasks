@@ -11,7 +11,7 @@ function getRandomArbitrary(min, max) {
   console.log(arr);
 
 
-
+//заменяем все отрицательные числа на 0
   arr.forEach(function(item, i, arr) {
     if (item < 0) {arr[i] = 0};
   }
@@ -19,7 +19,7 @@ function getRandomArbitrary(min, max) {
   console.log(arr);
 
 
-
+//после каждого второго элемента = 0 вставляем -1
   let count = 0;
   arr.forEach(function(item, i , arr){
       if (item == 0 && count == 1) {
