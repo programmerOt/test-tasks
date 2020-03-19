@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <form action="#" class="form">
+    <h3>Регистрация</h3>
+        <div class="registration">
+        <div class="e-mail">
+            <label for="e-mail">E-mail</label>
+            <input name="e-mail" required type="text" placeholder="example@site.domain" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"/>
+        </div>
+        <div class="password">
+           <div class="pass__main"> 
+            <label for="password">Пароль</label>
+            <input type="password" placeholder="password" name="password" required>
+        </div>
+        <div class="pass__rep">
+            <label for="password-repeat">Повторите пароль</label>
+            <input type="password" placeholder="password" name="password-repeat" required>
+        </div>
+        </div>
+        <div class="name">
+            <label for="name">ФИО</label>
+            <input type="text" name="name" placeholder="Игорев Игорь Николаевич" required pattern="^[A-Za-zА-Яа-яЁё\s]+$">
+        </div>
+        <div class="age">
+            <label for="age">Возраст</label>
+            <input type="text" name="age" placeholder="18" required pattern="[0-9]{2}" min="0" max="100" >
+        </div>
+        </div>
+        <div class="buttons">
+            <button type="submit">Отправить</button>
+            <button type="reset">Отмена</button>
+        </div>
+
+        </form>
+
+
+</body>
+</html>
